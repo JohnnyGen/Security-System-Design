@@ -1,0 +1,34 @@
+2025-01-28 19:34:01,290 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2954002590768>: {'uid': 123456, 'type': 2, 'subjects': [{'username': <vakt.rules.logic.Any object at 0x000002AFC8404AA0>}], 'effect': 'allow', 'resources': [<vakt.rules.string.StartsWith object at 0x000002AFC83E3380>], 'actions': [<vakt.rules.operator.Eq object at 0x000002AFC83E3410>], 'context': {'current_time': <vakt.rules.logic.And object at 0x000002AFC8465D30>}, 'description': 'Consenti la modifica delle note solo tra le 9:00 e le 18:00'}
+2025-01-28 19:34:01,290 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2954002591392>: {'uid': 123458, 'type': 2, 'subjects': [{'role': <vakt.rules.logic.Not object at 0x000002AFC8466DE0>}], 'effect': 'deny', 'resources': [<vakt.rules.string.StartsWith object at 0x000002AFC8466D80>], 'actions': [<vakt.rules.operator.Eq object at 0x000002AFC688EDB0>], 'context': {'current_time': <vakt.rules.logic.And object at 0x000002AFC8466E70>}, 'description': 'Negare la modifica del tema agli utenti non manager tra le 16:00 e le 7:59'}
+2025-01-28 19:34:01,290 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2954002591728>: {'uid': 123459, 'type': 2, 'subjects': [{'role': <vakt.rules.operator.Eq object at 0x000002AFC8466F30>}], 'effect': 'allow', 'resources': [<vakt.rules.string.StartsWith object at 0x000002AFC8466ED0>], 'actions': [<vakt.rules.operator.Eq object at 0x000002AFC8466F00>], 'context': {'current_time': <vakt.rules.logic.And object at 0x000002AFC8466FC0>}, 'description': 'Permette ai manager di modificare il tema solo tra le 8:00 e le 17:00'}
+2025-01-28 19:34:01,290 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2954002591056>: {'uid': 123457, 'type': 2, 'subjects': [{'role': <vakt.rules.logic.Any object at 0x000002AFC8466C90>}], 'effect': 'allow', 'resources': [<vakt.rules.string.StartsWith object at 0x000002AFC8466C00>], 'actions': [<vakt.rules.operator.Eq object at 0x000002AFC8466C60>], 'context': {'current_time': <vakt.rules.logic.And object at 0x000002AFC8466D20>}, 'description': 'Permette a tutti gli utenti di modificare il tema tra le 08:00 e le 16:00'}
+2025-01-28 19:34:02,212 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://192.168.1.113:5000
+2025-01-28 19:34:02,213 - [33mPress CTRL+C to quit[0m
+2025-01-28 19:34:02,217 -  * Restarting with stat
+2025-01-28 19:34:03,951 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2370418076672>: {'uid': 123456, 'type': 2, 'subjects': [{'username': <vakt.rules.logic.Any object at 0x00000227E7E57530>}], 'effect': 'allow', 'resources': [<vakt.rules.string.StartsWith object at 0x00000227E7E57320>], 'actions': [<vakt.rules.operator.Eq object at 0x00000227E7E573B0>], 'context': {'current_time': <vakt.rules.logic.And object at 0x00000227E7ED6C30>}, 'description': 'Consenti la modifica delle note solo tra le 9:00 e le 18:00'}
+2025-01-28 19:34:03,952 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2370418077296>: {'uid': 123458, 'type': 2, 'subjects': [{'role': <vakt.rules.logic.Not object at 0x00000227E7ED6DB0>}], 'effect': 'deny', 'resources': [<vakt.rules.string.StartsWith object at 0x00000227E7ED6D20>], 'actions': [<vakt.rules.operator.Eq object at 0x00000227E7ED6D50>], 'context': {'current_time': <vakt.rules.logic.And object at 0x00000227E7ED6E40>}, 'description': 'Negare la modifica del tema agli utenti non manager tra le 16:00 e le 7:59'}
+2025-01-28 19:34:03,952 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2370418077632>: {'uid': 123459, 'type': 2, 'subjects': [{'role': <vakt.rules.operator.Eq object at 0x00000227E7ED6F00>}], 'effect': 'allow', 'resources': [<vakt.rules.string.StartsWith object at 0x00000227E7ED6EA0>], 'actions': [<vakt.rules.operator.Eq object at 0x00000227E7ED6ED0>], 'context': {'current_time': <vakt.rules.logic.And object at 0x00000227E7ED6F90>}, 'description': 'Permette ai manager di modificare il tema solo tra le 8:00 e le 17:00'}
+2025-01-28 19:34:03,952 - Added Policy: <class 'vakt.policy.Policy'> <Object ID 2370418076912>: {'uid': 123457, 'type': 2, 'subjects': [{'role': <vakt.rules.logic.Any object at 0x00000227E7E744D0>}], 'effect': 'allow', 'resources': [<vakt.rules.string.StartsWith object at 0x00000227E7EA2F90>], 'actions': [<vakt.rules.operator.Eq object at 0x00000227E6351D00>], 'context': {'current_time': <vakt.rules.logic.And object at 0x00000227E7ED6C60>}, 'description': 'Permette a tutti gli utenti di modificare il tema tra le 08:00 e le 16:00'}
+2025-01-28 19:34:03,993 -  * Debugger is active!
+2025-01-28 19:34:03,996 -  * Debugger PIN: 695-982-126
+2025-01-28 19:49:02,609 - 127.0.0.1 - - [28/Jan/2025 19:49:02] "GET / HTTP/1.1" 200 -
+2025-01-28 19:49:02,728 - 127.0.0.1 - - [28/Jan/2025 19:49:02] "GET /static/login.css HTTP/1.1" 200 -
+2025-01-28 19:49:02,762 - 127.0.0.1 - - [28/Jan/2025 19:49:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-28 19:49:19,697 - Errore durante la richiesta a Vault: 503 Server Error: Service Unavailable for url: https://127.0.0.1:8200/v1/auth/ldap/login/scott
+2025-01-28 19:49:19,697 - User: scott | Action: accesso | Resource: pagina di login | Timestamp: 2025-01-28T19:49:19Z | Session ID: 0 | Status: fallimento 
+2025-01-28 19:49:19,699 - 127.0.0.1 - - [28/Jan/2025 19:49:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-28 19:49:19,708 - 127.0.0.1 - - [28/Jan/2025 19:49:19] "GET / HTTP/1.1" 200 -
+2025-01-28 19:49:19,759 - 127.0.0.1 - - [28/Jan/2025 19:49:19] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-28 19:49:27,196 - Errore durante la richiesta a Vault: 503 Server Error: Service Unavailable for url: https://127.0.0.1:8200/v1/auth/ldap/login/admin
+2025-01-28 19:49:27,196 - User: admin | Action: accesso | Resource: pagina di login | Timestamp: 2025-01-28T19:49:27Z | Session ID: 0 | Status: fallimento 
+2025-01-28 19:49:27,200 - 127.0.0.1 - - [28/Jan/2025 19:49:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-28 19:49:27,211 - 127.0.0.1 - - [28/Jan/2025 19:49:27] "GET / HTTP/1.1" 200 -
+2025-01-28 19:49:27,352 - 127.0.0.1 - - [28/Jan/2025 19:49:27] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
+2025-01-28 19:49:33,518 - Errore durante la richiesta a Vault: 503 Server Error: Service Unavailable for url: https://127.0.0.1:8200/v1/auth/ldap/login/admin1
+2025-01-28 19:49:33,518 - User: admin1 | Action: accesso | Resource: pagina di login | Timestamp: 2025-01-28T19:49:33Z | Session ID: 0 | Status: fallimento 
+2025-01-28 19:49:33,523 - 127.0.0.1 - - [28/Jan/2025 19:49:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-28 19:49:33,534 - 127.0.0.1 - - [28/Jan/2025 19:49:33] "GET / HTTP/1.1" 200 -
+2025-01-28 19:49:33,681 - 127.0.0.1 - - [28/Jan/2025 19:49:33] "[36mGET /static/login.css HTTP/1.1[0m" 304 -
