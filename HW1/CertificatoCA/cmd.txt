@@ -1,0 +1,6 @@
+Per creare un certificato ch può essere usato per firmare altri certificati, quindi è un certificato di un'Autorità di Certificazione (CA) (CA:TRUE) devi costruire prima il file openssl_ca.cnf.
+
+
+
+
+openssl req -x509 -new -nodes -key chiave_pvt.key -sha256 -days 365 -out localhost.crt -config openssl_ca.cnf 
