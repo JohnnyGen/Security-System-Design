@@ -1,0 +1,73 @@
+/* Impostazioni di base per il layout */
+body.light {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.dark {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Header della pagina notifiche */
+.dashboard-container .header h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Stile per la lista delle notifiche */
+.notifications-list {
+    margin: 20px;
+}
+
+.notification {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification h3 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.notification p {
+    color: #7f8c8d;
+}
+
+/* Stile per il banner "Non ci sono notifiche" */
+.no-notifications-banner {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.no-notifications-banner p {
+    margin: 0;
+}
+
+/* Stile per il link "Torna alla dashboard" */
+.no-notifications {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.card-btn:hover {
+    background-color: #3498db;
+}

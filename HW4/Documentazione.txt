@@ -1,0 +1,30 @@
+1) Installare Vault:
+- Scaricare dal sito;
+- Aggiungere a PATH;
+- Verificare installazione con: vault --version
+
+2) Configurare Vault:
+- File di configurazione vault-config.hcl nella cartella di vault
+- set VAULT_ADDR=https://127.0.0.1:8200 per stabilire una connessione HTTPS (echo %VAULT_ADDR% per verificare)
+- set VAULT_SKIP_VERIFY=true per skippare la verifica del certificato (è auto-firmato, Vault di default lo rifiuterà)
+- vault server -config="C:/Program Files/Vault/config/vault-config.hcl" per avviare vault con il file di configurazione
+- netstat -an | find "8200" per verificare che vault stia ascoltando (deve esserci  TCP    0.0.0.0:8200           0.0.0.0:0              LISTENING)
+- vault operator init: genererà nuove chiavi di unseal come quelle sotto
+- Usa vault operator unseal 3 volte oppure accedi a https://127.0.0.1:8200 e inserisci le 3 chiavi
+- Inserisci il Root Token (vault login RootToken)
+
+3) Per settare una policy:
+- vault write auth/userpass/users/myuser policies="webapp-policy"
+
+4) Per leggere una policy:
+- vault read auth/userpass/users/myuser
+
+C:\Users\utente>vault operator init
+
+Unseal Key 1: 658vKjWqRK86kUAD65+8+AQSszr84tK4rRD3LCswskX/
+Unseal Key 2: LIPMdZNWPnlSaYs7q3gmZxnc81lPOiHBwL4S0gSQqT1Z
+Unseal Key 3: Cnzs/2ezTWr6k2d1R5CIXpXg97wQObCX/sv7Ddux/em4
+Unseal Key 4: +IzTUe1SgfkgNS5v55hH8FPnDIpvf2yaq9lJ6DBwOjQr
+Unseal Key 5: 22HHHYhbsrNrd0dpe2MguFmxQjdCmXoHBfz/30CsTEiV
+
+Initial Root Token: hvs.qbkRnAHUcISMhP1LqARU8jwl

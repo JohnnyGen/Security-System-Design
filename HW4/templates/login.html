@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="notification-banner">
+        AVVISO: Il sistema è sotto controllo e il suo uso può avvenire solo per finalità legittime, in conformità con il ruolo attribuito.    </div>
+
+    <div class="login-container">
+        <form method="POST" action="/login">
+            <h2>Login</h2>
+
+            <!-- Mostra i messaggi di flash -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="flash-messages">
+                        {% for category, message in messages %}
+                            <div class="flash {{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" required><br>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

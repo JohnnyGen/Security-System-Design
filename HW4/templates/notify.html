@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifiche</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body class="{{ 'dark' if theme == 'dark' else 'light' }}">
+    <div class="dashboard-container">
+        <div class="header">
+            <h2>Le tue notifiche</h2>
+        </div>
+
+        {% if notifications %}
+            <div class="notifications-list">
+                {% for notification in notifications %}
+                    <div class="notification">
+                        <h3>{{ notification.title }}</h3>
+                        <p>{{ notification.content }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="no-notifications-banner">
+                <p>Non sembra esserci nulla qui.</p>
+            </div>
+            <div class="no-notifications">
+                <a href="/dashboard" class="card-btn">Torna alla dashboard</a>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

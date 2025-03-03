@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Banner di notifica */
+.notification-banner {
+    background-color: #a6c1ee; /* Colore azzurro pastello, in armonia con il gradiente */
+    color: #2c3e50; /* Colore scuro per contrastare bene con l'azzurro */
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Spazio sotto il banner */
+    border-radius: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0; /* Posiziona il banner in cima alla pagina */
+    left: 0;
+}
+
+
+/* Contenitore del login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+/* Titolo della pagina di login */
+.login-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Styling dei campi del form */
+form div {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f0f4f8;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Focalizzazione input */
+form input:focus {
+    border-color: #5b6ea5;
+    outline: none;
+}
+
+/* Styling del bottone di submit */
+form button {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #5b6ea5;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+/* Hover sul bottone */
+form button:hover {
+    background-color: #4a5a87;
+}
+
+/* Styling per i messaggi di errore */
+.flash-messages {
+    margin-bottom: 20px;
+}
+
+.flash {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.flash.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.flash.success {
+    background-color: #4CAF50;
+    color: white;
+}

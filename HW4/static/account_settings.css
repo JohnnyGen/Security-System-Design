@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+/* Contenitore della pagina delle impostazioni */
+.account-settings-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.account-settings-container:hover {
+    transform: scale(1.03);
+}
+
+.flash {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flash.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.flash.error {
+    background-color: #f44336;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f0f4f8;
+    transition: background-color 0.3s ease;
+}
+
+select:focus, button:focus {
+    outline: none;
+    background-color: #e1e7ef;
+}
+
+button {
+    background-color: #5b6ea5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a5a87;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #5b6ea5;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    color: #4a5a87;
+}
